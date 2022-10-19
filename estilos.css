@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+    font-family: 'Outfit'; 
+    background-color: #333;
+}
+
+
+/* HOME */
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+}
+.content {
+    max-width: 49rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.header-video video {
+    min-width: 100%;
+    min-height: 100%;
+}
+.header-overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333;
+    z-index: 1;
+    opacity: .85;
+}
+.header-content {
+    z-index: 2;
+    text-align: center;
+}
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.btn {
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+
+/* FOOTER */
+footer {
+    margin-top: 200px;
+}
+.footer{
+    background-color: #DCDCDD;
+    width: 100%; 
+    height: 259px;
+}
+.partes-footer {
+    list-style: none;
+}
+.links-footer {
+    color: #333333;
+    text-decoration: solid;
+    display: inline-table;
+}
+.opciones-footer {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    /* text-decoration: line-through; */
+}
+.opciones-footer a:hover {
+    color:white;
+}
+
+
+/*NAVBAR */
+.partes-navbar {
+    background-color: #DCDCDD;
+    height: 75px;
+    width: 100%;
+    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+}
+.lista-navbar {
+   float: right;
+   list-style: none; 
+   display: flex;
+   margin-right: 30px;
+}
+.lista-navbar li {
+    float: left;
+} 
+.opciones-navbar a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 18px 30px;
+    text-decoration: none;
+}
+.opciones-navbar a:hover {
+    color:black;
+}
+.logo {
+    float: left;
+    padding-left: 0.5em;
+    margin-left: 0;
+}
+
+
+/*QUIENES SOMOS*/
+.general-background {
+    background-image: url(./fotos/foto-papel.jpg);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.fotos-nosotros {
+    width: 400px;
+    height: 500px;
+    border-radius: 2.5%;
+}
+.personas-lista {
+    list-style: none;
+    padding-left: 3em;
+    margin-top: 100px;
+}
+.texto-nosotros {
+    color:black;
+    font-size: 25px;
+}
+
+
+/*QUE HACEMOS*/
+.foto-quehacemos {
+    width: 800px;
+    height: 700px;
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 25%;
+    border-radius: 25px;
+    overflow: visible;
+}
+.texto-quehacemos {
+    color: black;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* CATALOGO */
+.foto-producto {
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+}
+.lista-catalogo li {
+    display:inline-table;
+    padding: 1.5em;
+    margin-left: 18px;
+    text-align: center;
+    margin-top: 100px;
+}
+.texto-producto {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    color: black;
+}
+.boton {
+    border-radius: 8px;
+    position: relative;
+    padding: 15px 32px;
+    background-color: #f0ead2;
+    color: #a98467;
+    font-family: 'Outfit';
+    border: none;
+}
+.boton:hover {
+    color:black;
+}
+
+
+/* Contacto */
+.formulario {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 4px;
+    font-family: 'Calibri';
+    color:black;
+    align-items: center;
+}
+.entradas {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 34px;
+    border: none;
+    color: #a98467;
+    background-color: #f0ead2;
+    align-items: center;
+    font-family: 'Outfit';
+}
+.buttons {
+    border-radius: 8px;
+    position: relative;
+    padding: 12px 30px;
+    background-color: #f0ead2;
+    color: #a98467;
+    font-family: 'Outfit';
+    border: none;
+}
+.buttons:hover {
+    color: black;
+}

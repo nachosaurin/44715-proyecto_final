@@ -104,6 +104,10 @@ footer {
 
 
 /*NAVBAR */
+.navbar-light{
+    background-color:#DCDCDD;
+}
+
 .partes-navbar {
     background-color: #DCDCDD;
     height: 75px;

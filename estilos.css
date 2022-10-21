@@ -65,7 +65,7 @@ body {
     padding-bottom: 1rem;
     text-align: center;
 }
-.btn {
+.btnh {
     color: white;
     font-size: 1.2rem;
     padding: 1rem 2rem;
@@ -73,6 +73,9 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
+.btnh:hover {
+    color: grey;
+}
 
 /* FOOTER */
 footer {
@@ -96,7 +99,7 @@ footer {
     color: white;
     text-align: center;
     padding: 12px 20px;
-    /* text-decoration: line-through; */
+
 }
 .opciones-footer a:hover {
     color:white;
@@ -106,40 +109,58 @@ footer {
 /*NAVBAR */
 .navbar-light{
     background-color:#DCDCDD;
+    height: 90px; 
+}
+.nav-item{
+    align-items: right;
+    font-size: large;
+    font-family: 'Outfit';
 }
 
-.partes-navbar {
-    background-color: #DCDCDD;
-    height: 75px;
+.navbar-brand {
+    font-size: xx-large;
+    font-family: 'Outfit';
+    color: solid black;
+}
+
+
+
+
+/* BOTON ANIMADO */
+.boton-animado {
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+    border: 0; 
+    background: transparent;
+    gap: .45rem;
+    border-radius: 0;
+    box-decoration-break: none;
+    margin-top: 4px;
+    box-shadow: none;
+
+}
+.boton-animado div {
+    background: black;
+    height: 2px;
     width: 100%;
-    align-items: center; 
-    display: flex;
-    justify-content: space-between;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
 }
-.lista-navbar {
-   float: right;
-   list-style: none; 
-   display: flex;
-   margin-right: 30px;
+.boton-animado:hover .primer-palo {
+    transform: rotate(45deg);
 }
-.lista-navbar li {
-    float: left;
-} 
-.opciones-navbar a {
-    display: flex;
-    color: white;
-    text-align: center;
-    padding: 18px 30px;
-    text-decoration: none;
+.boton-animado:hover .segundo-palo {
+    opacity: 0;
 }
-.opciones-navbar a:hover {
-    color:black;
+.boton-animado:hover .tercer-palo {
+    transform: rotate(-45deg);
 }
-.logo {
-    float: left;
-    padding-left: 0.5em;
-    margin-left: 0;
-}
+
+
+
 
 
 /*QUIENES SOMOS*/
@@ -166,91 +187,31 @@ footer {
 
 
 /*QUE HACEMOS*/
-.foto-quehacemos {
-    width: 800px;
-    height: 700px;
-    margin-top: 100px;
-    margin-left: 20%;
-    margin-right: 25%;
-    border-radius: 25px;
-    overflow: visible;
-}
-.texto-quehacemos {
-    color: black;
-    font-size: 25px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    position: relative;
-    text-align: center;
-    margin-bottom: 40px;
-}
 
 
 /* CATALOGO */
-.foto-producto {
-    width: 350px;
-    height: 350px;
-    border-radius: 12px;
-}
-.lista-catalogo li {
-    display:inline-table;
-    padding: 1.5em;
-    margin-left: 18px;
-    text-align: center;
-    margin-top: 100px;
-}
-.texto-producto {
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    color: black;
-}
-.boton {
+
+
+
+.btn {
     border-radius: 8px;
     position: relative;
     padding: 15px 32px;
-    background-color: #f0ead2;
-    color: #a98467;
+    background-color: grey;
+    color: white;
     font-family: 'Outfit';
     border: none;
 }
-.boton:hover {
-    color:black;
+.bg-light {
+    color:  solid #DCDCDD;
 }
-
 
 /* Contacto */
-.formulario {
-    width: 400px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 150px;
-    border-radius: 4px;
-    font-family: 'Calibri';
-    color:black;
+.form-control {
     align-items: center;
+    padding: 1.5em 1.5em;
+    margin-top:0;
+    box-sizing: small;
+    
 }
-.entradas {
-    width: 100%;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 34px;
-    border: none;
-    color: #a98467;
-    background-color: #f0ead2;
-    align-items: center;
-    font-family: 'Outfit';
-}
-.buttons {
-    border-radius: 8px;
-    position: relative;
-    padding: 12px 30px;
-    background-color: #f0ead2;
-    color: #a98467;
-    font-family: 'Outfit';
-    border: none;
-}
-.buttons:hover {
-    color: black;
-}
+

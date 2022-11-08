@@ -127,7 +127,8 @@ body {
     height: 100vh;
     object-fit: cover;
 }
-.grid {
+
+/*.grid {
     display: flex;
     min-height: 100vh;
     width: 114em;
@@ -168,7 +169,7 @@ body {
     .grid{
         grid-gap: 3rem;
     }
-}
+}*/
 /* CATALOGO */
 .btn {
     border-radius: 8px;
@@ -205,10 +206,10 @@ form {
 /*QUE HACEMOS */
 
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:414px) {
     .carousel-caption{
         display: block!important;
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
@@ -223,3 +224,12 @@ form {
     color: #fff;
     text-align: center;
 }
+
+
+/* Nosotros */
+
+
+.card {
+   background-color: #DCDCDD;
+}
+

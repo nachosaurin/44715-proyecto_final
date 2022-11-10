@@ -1,0 +1,269 @@
+.contenedor-globalf {
+  background-color: #DCDCDC;
+  margin-top: 5em;
+  align-self: flex-end;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.contenedor-redes {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-redes i {
+  font-size: 20px;
+  display: flex;
+  padding: 0.5em;
+  --fa-animation-duration: 1.5s;
+}
+.contenedor-redes .copyright {
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.lista-footer li {
+  text-decoration: none;
+  list-style: none;
+  padding-top: 1em;
+  padding-right: 2.3em;
+  display: flex;
+  justify-content: center;
+}
+
+.links-footer {
+  color: rgba(0, 0, 0, 0.5019607843);
+  text-decoration: none;
+}
+
+.links-footer:hover {
+  color: white;
+}
+
+.navbar-light {
+  background-color: #DCDCDD;
+  height: 90px;
+}
+
+.nav-item {
+  align-items: right;
+  font-size: large;
+  font-family: "Outfit";
+  background-color: #dcdcdd;
+}
+
+.navbar-brand {
+  font-size: xx-large;
+  font-family: "Outfit";
+  color: solid black;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-toggler {
+  background-color: #dcdcdd;
+}
+
+@media only screen and (max-width: 414px) {
+  .navbar {
+    z-index: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+  font-family: "Outfit";
+  background-color: #333;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/* HOME */
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.content {
+  max-width: 49rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.header-content {
+  z-index: 2;
+  text-align: center;
+}
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+.header-content p {
+  font-size: 1.5rem;
+  display: flexbox;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.btnh {
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+}
+
+.btnh:hover {
+  color: grey;
+}
+
+/* BOTON ANIMADO menu responsive*/
+.boton-animado {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 3rem;
+  border: 0;
+  background: transparent;
+  gap: 0.45rem;
+  border-radius: 0;
+  -webkit-box-decoration-break: none;
+          box-decoration-break: none;
+  margin-top: 4px;
+  box-shadow: none;
+}
+.boton-animado div {
+  background: black;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transform-origin: left;
+}
+
+.boton-animado:hover .primer-palo {
+  transform: rotate(45deg);
+}
+
+.boton-animado:hover .segundo-palo {
+  opacity: 0;
+}
+
+.boton-animado:hover .tercer-palo {
+  transform: rotate(-45deg);
+}
+
+/*QUIENES SOMOS/ nosotros*/
+.general-background {
+  background-image: url(./fotos/foto-papel.jpg);
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-width: 415px) {
+  .card {
+    position: relative;
+  }
+}
+/* CATALOGO */
+.btn {
+  border-radius: 8px;
+  position: relative;
+  padding: 15px 32px;
+  background-color: grey;
+  color: white;
+  font-family: "Outfit";
+  border: none;
+}
+
+.bg-light {
+  color: solid #DCDCDD;
+}
+
+/* Contacto */
+form {
+  margin: 0 auto;
+}
+
+.form-control {
+  padding: 1.5em;
+}
+
+.btn-form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5em;
+  box-shadow: none;
+  background-color: black;
+  align-self: center;
+}
+
+.bg-lightf {
+  background-color: #DCDCDD;
+}
+
+/*QUE HACEMOS */
+@media only screen and (max-width: 414px) {
+  .carousel-caption {
+    display: block;
+    font-size: 14px;
+  }
+  .carousel-caption {
+    opacity: 0.2;
+  }
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}/*# sourceMappingURL=estilos2.css.map */

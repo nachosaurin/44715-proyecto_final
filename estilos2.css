@@ -205,7 +205,6 @@ body {
 
 @media only screen and (min-width: 415px) {
   .card {
-    z-index: 10;
     position: relative;
   }
 }
@@ -250,8 +249,11 @@ form {
 /*QUE HACEMOS */
 @media only screen and (max-width: 414px) {
   .carousel-caption {
-    display: block !important;
+    display: block;
     font-size: 14px;
+  }
+  .carousel-caption {
+    opacity: 0.2;
   }
 }
 .carousel-caption {
@@ -259,7 +261,7 @@ form {
   right: 15%;
   bottom: 20px;
   left: 15%;
-  z-index: 10;
+  z-index: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;

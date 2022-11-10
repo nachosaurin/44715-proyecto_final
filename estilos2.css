@@ -21,9 +21,6 @@
   justify-content: center;
   opacity: 0.8;
 }
-.contenedor-redes .copyright .texto-copy {
-  opacity: 0.1;
-}
 
 .lista-footer li {
   text-decoration: none;
@@ -69,12 +66,17 @@
   background-color: #dcdcdd;
 }
 
+@media only screen and (max-width: 414px) {
+  .navbar {
+    z-index: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 1;
+  margin: 0;
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
@@ -201,48 +203,12 @@ body {
      object-fit: cover;
 }
 
-/*.grid {
-    display: flex;
-    min-height: 100vh;
-    width: 114em;
-    grid-gap:6rem;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    align-items: start;
-    margin-top: 50px;
+@media only screen and (min-width: 415px) {
+  .card {
+    z-index: 10;
+    position: relative;
+  }
 }
-.grid-item{
-    background-color: #fff;
-    border-radius: 0.9rem;
-    overflow: hidden;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: 0.7s; 
-}
-.grid-item:hover {
-    transform: translateY(-10%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-}
-.card-img {
-    display: block;
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-}
-.card-content {
-    padding: 3rem;
-}
-.card-header {
-    font-size: 3rem;
-    font-weight: 500;
-    color:#0d0d0d0d;
-    margin-bottom: 1.5rem;
-
-}
-@media only screen and  (max-width: 60rem){
-    .grid{
-        grid-gap: 3rem;
-    }
-}*/
 /* CATALOGO */
 .btn {
   border-radius: 8px;
@@ -298,9 +264,4 @@ form {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
-}
-
-/* Nosotros */
-.card {
-  background-color: #DCDCDD;
 }/*# sourceMappingURL=estilos2.css.map */

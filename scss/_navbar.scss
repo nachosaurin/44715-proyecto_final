@@ -15,8 +15,17 @@
 }
 .navbar {
     width: 100%;
+    z-index: 1;
+    
 }
 
 .navbar-toggler {
-    background-color: #dcdcdd;
+    background-color: #dcdcdd;  
+}
+
+@media only screen and (max-width:414px) {
+    .navbar{
+        z-index: 1;
+    }  
+   
 }

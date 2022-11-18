@@ -172,6 +172,7 @@ body {
           box-decoration-break: none;
   margin-top: 4px;
   box-shadow: none;
+  z-index: 0;
 }
 .boton-animado div {
   background: black;
